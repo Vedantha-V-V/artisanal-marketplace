@@ -1,0 +1,25 @@
+.footer {
+        position: fixed; /* Fixed position */
+        bottom: 0; /* Aligns to the bottom of the viewport */
+        left: 0; /* Aligns to the left edge */
+        right: 0; /* Aligns to the right edge */
+        background-color: #2d3748; /* Tailwind's bg-gray-800 */
+        color: #ffffff; /* Tailwind's text-white */
+        padding-top: 1rem; /* Tailwind's py-4 (1rem = 16px top padding) */
+        padding-bottom: 1rem; /* Bottom padding */
+        text-align: center; /* Center-aligned text */
+      
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-links a {
+    font-family:Segoe UI;
+    text-decoration: none;
+    color: #333;
+}
