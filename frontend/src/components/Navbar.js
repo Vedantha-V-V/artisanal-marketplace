@@ -28,6 +28,7 @@ const Navbar = ({click}) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
+        <img src="Art To Cart.png" alt="Website Logo" className="logo" />
         <h2>Art To Cart</h2>
       </div>
       <div>
@@ -43,7 +44,7 @@ const Navbar = ({click}) => {
         </li>
 
         <li>
-          <Link to="/about" className="navbar__token">
+          <Link to="/contact" className="navbar__token">
           Contact
           </Link>
         </li>
