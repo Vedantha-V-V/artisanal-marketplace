@@ -1,3 +1,13 @@
+.sales-timer {
+    background-color: rgb(188, 186, 184);
+    color: #333;
+    font-size: 1.5em;
+
+    font-family:Georgia;
+    font-weight:bold;
+    text-align:center;
+}
+
 .banner {
     position:relative;
     color: white;
@@ -38,7 +48,7 @@
     font-family:Verdana;
     font-weight:bold;
     background-color: #C8A165;
-    color:#1b1b1b;
+    color:ivory;
     padding: 0.5rem 1rem;
     border:none;
     border-radius: 5px;

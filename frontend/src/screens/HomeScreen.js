@@ -29,7 +29,7 @@ const HomeScreen = () => {
     <div className="homescreen">
       <h2 className="homescreen__title">Latest Products</h2>
       <div className="divider"><hr></hr></div>
-      <div className="homescreen__products">
+      <div className="homescreen__products" id="latest-products">
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (
