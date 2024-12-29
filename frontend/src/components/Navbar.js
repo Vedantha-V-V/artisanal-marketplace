@@ -1,7 +1,6 @@
 import './Navbar.css'
 import {Link, useHistory} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
-import {useMemo} from 'react'
 import {logout} from '../utils/localstorage'
 import {setInitialState} from '../redux/actions/userAction'
 

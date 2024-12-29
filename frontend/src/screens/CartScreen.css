@@ -17,6 +17,7 @@
 
 .cartscreen__right {
   flex: 0.3;
+  border-radius:5px;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   height: fit-content;
@@ -40,16 +41,20 @@
 }
 
 .cartscreen__right div button {
+  font-family:Verdana;
+  font-weight:bold;
   padding: 10px 17px;
   width: 100%;
-  background: #171717;
+  background: #C8A165;
   color: #f4f4f4;
-  border: 1px solid #171717;
+  border:none;
   cursor: pointer;
+  border-radius:5px;
+  transition: all 0.5s ease;
 }
 
 .cartscreen__right div button:hover {
-  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1320px) {

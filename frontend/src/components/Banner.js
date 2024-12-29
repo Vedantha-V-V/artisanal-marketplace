@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Banner.css';
 import BannerImg from './banner-2.jpg';
 
