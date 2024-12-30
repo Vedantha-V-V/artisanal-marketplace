@@ -14,17 +14,18 @@ textarea {
 }
 
 .signupscreen input[type='submit'] {
-  background-color: #457b9d;
+  background-color: #C8A165;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  transition:all 0.5s ease;
 }
 
 .signupscreen input[type='submit']:hover {
-  background-color: #1d3557;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .signupscreen .container p {

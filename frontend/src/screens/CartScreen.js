@@ -1,6 +1,7 @@
 import "./CartScreen.css";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { useEffect } from "react";
 
 // Components
 import CartItem from "../components/CartItem";
@@ -11,12 +12,18 @@ import useLogin from "../utils/hooks/useLogin";
 
 const CartScreen = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const cart = useSelector((state) => state.cart);
-
   const { loginInfo } = useLogin();
-
   const { cartItems } = cart;
+
+  useEffect(() => {
+    if (!loginInfo.loading && !loginInfo.isLogin) {
+      alert("You need to login first to access the cart.");
+      history.push("/signin");
+    }
+  }, [loginInfo, history]);
 
   const qtyChangeHandler = (id, qty) => {
     dispatch(addToCart(id, qty));
@@ -37,7 +44,7 @@ const CartScreen = () => {
   };
 
   const handleProceedBtn = () => {
-    alert("Functionality pending please stay tune, will be add soon.");
+    alert("Functionality pending please stay tuned, will be added soon.");
   };
 
   if (loginInfo.loading) return <h1>Loading.....</h1>;
@@ -71,7 +78,7 @@ const CartScreen = () => {
             </div>
             <div>
               <button
-                title="Functionality need to be add."
+                title="Functionality needs to be added."
                 onClick={handleProceedBtn}
               >
                 Proceed To Checkout

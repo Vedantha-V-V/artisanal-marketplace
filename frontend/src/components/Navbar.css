@@ -8,8 +8,8 @@
   z-index: 50;
 }
 
-.navbar__logo{
-  display:flex;
+.navbar__logo {
+  display: flex;
 }
 
 .logo {
@@ -20,12 +20,12 @@
 }
 
 .navbar__logo h2 {
-  font-family:Verdana;
-  font-weight:bold;
-  color: #C2503B;
+  font-family: Verdana;
+  font-weight: bold;
+  color: #c2503b;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .navbar__links {
@@ -35,8 +35,8 @@
 }
 
 .navbar__links > li {
-  font-family:Verdana;
-  font-weight:bold;
+  font-family: Verdana;
+  font-weight: bold;
   padding-left: 1.5rem;
 }
 
@@ -46,8 +46,9 @@
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  transition:all 0.5 ease;
+  transition: all 0.5 ease;
 }
+
 .navbar__links > li > p {
   text-decoration: none;
   color: #333;
@@ -64,23 +65,26 @@
 }
 
 .navbar__token {
-  transition:all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
-.navbar__token:hover{
-  color:rgb(127, 127, 127);
-}
-
-.cart__link>span{
-  color:#333;
+.navbar__token:hover {
+  color: rgb(127, 127, 127);
 }
 
 .cart__link {
-  background-color: #C8A165;
-  color:#333;
+  background-color: #c8a165;
+  color: #333;
   padding: 10px;
   border-radius: 8px;
   transition: all 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart__link i {
+  margin-right: 5px;
 }
 
 .cart__link:hover {
@@ -88,16 +92,16 @@
 }
 
 .cartlogo__badge {
-  width: 30px;
-  height: 30px;
-  background-color: #f4f4f4;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f61;
   border-radius: 50%;
-  margin-left: 8px;
-  color: #333;
+  margin-left: 5px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .hamburger__menu {
@@ -118,6 +122,41 @@
   width: 100%;
   height: 3px;
   background: #f4f4f4;
+}
+
+.profile__icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.profile__dropdown {
+  position: absolute;
+  top: 60px;
+  right: 105px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.profile__dropdown p {
+  font-family:Verdana;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.logout__link {
+  cursor: pointer;
+  color: #c2503b;
+}
+
+.login__link {
+  text-decoration: none;
+  color: #c2503b;
 }
 
 @media (max-width: 960px) {
