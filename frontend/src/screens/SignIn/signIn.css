@@ -14,7 +14,7 @@ textarea {
 }
 
 .signinscreen input[type='submit'] {
-  background-color: rgb(98, 87, 87);
+  background-color: #C8A165;
   font-family:Arial;
   font-weight:bold;
   color: white;
@@ -23,6 +23,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  transition:all 0.5s ease;
 }
 
 .signinscreen input[type='submit']:hover {
