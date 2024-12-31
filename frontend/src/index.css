@@ -7,6 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f4f4f4;
+  overflow-x: hidden; /* Add this line to hide horizontal scrollbar */
 }
 
 img {
