@@ -52,6 +52,9 @@ const Navbar = ({ click }) => {
             <Link to="/about" className="navbar__token">About</Link>
           </li>
           <li>
+            <Link to="/categories" className="navbar__token">Categories</Link> {/* Add this line */}
+          </li>
+          <li>
             <Link to="/contact" className="navbar__token">Contact</Link>
           </li>
         </ul>

@@ -7,6 +7,7 @@ const products = [
       "A set of 3 handcrafted terracotta planters, each featuring intricate patterns inspired by traditional Indian pottery. Perfect for small plants like succulents or herbs. These eco-friendly planters add a rustic charm to any home or garden space.",
     price: 850,
     countInStock: 15,
+    category: "Home Decor",
   },
   {
     name: "Handwoven Table Runner",
@@ -16,6 +17,7 @@ const products = [
       "A stunning jute table runner woven by skilled artisans, featuring intricate geometric patterns. Its earthy tones and durable material make it a perfect addition to dining tables, blending style with sustainability.",
     price: 1200,
     countInStock: 10,
+    category: "Textiles",
   },
   {
     name: "Ancient Coin",
@@ -25,6 +27,7 @@ const products = [
       "Step back in time with this authentic Roman Silver Denarius coin, a relic from the first century AD. Minted during the reign of Emperor Augustus, this coin features the emperor's profile on one side, symbolizing authority and legacy, while the reverse depicts a laurel wreath, representing victory and peace. Each coin has been carefully preserved, showcasing its unique patina and craftsmanship.",
     price: 1300,
     countInStock: 5,
+    category: "Antiques",
   },
   {
     name: "Vintage Brass Candle Holder",
@@ -34,6 +37,7 @@ const products = [
       "A pair of intricately carved brass candle holders with a vintage finish. These antique-inspired pieces exude timeless elegance and are perfect for creating a cozy, ambient atmosphere during celebrations or quiet evenings.",
     price: 1500,
     countInStock: 25,
+    category: "Home Decor",
   },
   {
     name: "Hand Painted Terracotta Tea Set",
@@ -43,6 +47,7 @@ const products = [
       "A beautifully crafted terracotta tea set consisting of four cups and a teapot, hand-painted with tribal art motifs. This set is not just functional but also doubles as a unique piece of décor for your kitchen or dining area.",
     price: 1800,
     countInStock: 4,
+    category: "Home Decor",
   },
   {
     name: "Kantha Stitch Tote Bag",
@@ -52,6 +57,7 @@ const products = [
       "A spacious and stylish tote bag crafted with traditional Kantha stitch embroidery. Made with upcycled fabric, this eco-conscious bag combines functionality with artistic appeal, making it ideal for everyday use.",
     price: 1100,
     countInStock: 10,
+    category: "Textiles",
   },
 ];
 

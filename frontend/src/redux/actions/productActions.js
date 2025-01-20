@@ -23,6 +23,27 @@ export const getProducts = () => async dispatch => {
   }
 }
 
+export const getProductsByCategory = category => async dispatch => {
+  try {
+    dispatch({ type: actionTypes.GET_PRODUCTS_REQUEST });
+
+    const { data } = await Api.getRequest(`/api/products/category/${category}`);
+
+    dispatch({
+      type: actionTypes.GET_PRODUCTS_SUCCESS,
+      payload: JSON.parse(data),
+    });
+  } catch (error) {
+    dispatch({
+      type: actionTypes.GET_PRODUCTS_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};
+
 export const getProductDetails = id => async dispatch => {
   try {
     dispatch({type: actionTypes.GET_PRODUCT_DETAILS_REQUEST})
