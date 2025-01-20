@@ -15,6 +15,8 @@ import SignUp from './screens/SignUp'
 import SignIn from './screens/SignIn'
 import ContactScreen from './screens/ContactScreen'
 import AboutScreen from './screens/AboutScreen'
+import CategoriesScreen from './screens/CategoriesScreen'
+import CategoryScreen from './screens/CategoryScreen'
 import {useDispatch} from 'react-redux'
 import {fetchCart} from './redux/actions/cartActions'
 import {setUserDeatils} from './redux/actions/userAction'
@@ -43,6 +45,8 @@ function App() {
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/about" component={AboutScreen}/>
           <Route exact path="/contact" component={ContactScreen}/>
+          <Route exact path="/categories" component={CategoriesScreen} />
+          <Route exact path="/category/:category" component={CategoryScreen} />
         </Switch>
       </main>
     </Router>
