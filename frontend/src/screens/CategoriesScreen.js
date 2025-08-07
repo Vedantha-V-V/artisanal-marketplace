@@ -19,6 +19,13 @@ const CategoriesScreen = () => {
 
   const categories = [...new Set(products.map(product => product.category))];
 
+  // Mapping of categories to images
+  const categoryImages = {
+    "Home Decor": "/images/home-decor.jpg",
+    "Textiles": "/images/textiles.jpg",
+    "Antiques": "/images/antiques.jpg"
+  };
+
   return (
     <div className="categories-screen">
       <h2>Categories</h2>
@@ -30,6 +37,7 @@ const CategoriesScreen = () => {
         ) : (
           categories.map(category => (
             <Link to={`/category/${category}`} key={category} className="category-card">
+              <img src={categoryImages[category]} alt={category} className="category-image" />
               <h3>{category}</h3>
             </Link>
           ))

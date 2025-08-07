@@ -32,15 +32,15 @@ function AboutScreen() {
         <h2>What Our Customers Say</h2>
         <div className="review">
           <p>"Art To Cart transformed the way I shop online. Highly recommended!"</p>
-          <p>- Jeff Bezos.</p>
+          <p>- Rahul Jha.</p>
         </div>
         <div className="review">
           <p>"Exceptional customer service and great product variety. Love it!"</p>
-          <p>- Jack Ma.</p>
+          <p>- Saurabh Mandal.</p>
         </div>
         <div className="review">
           <p>"Fast delivery and great deals. This is my go-to platform now."</p>
-          <p>- Sundar Pichai.</p>
+          <p>- Naveen Bansal.</p>
         </div>
       </section>
     </main>
