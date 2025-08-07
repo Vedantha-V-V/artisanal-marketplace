@@ -59,6 +59,26 @@ const products = [
     countInStock: 10,
     category: "Textiles",
   },
+  {
+    name: "Handcrafted Wooden Wall Art",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2017/10/22/12/11/plate-2877641_1280.jpg",
+    description:
+      "This beautiful, handcrafted wooden wall art features intricate carvings inspired by nature and traditional craftsmanship. Made from sustainable wood, each piece is a unique expression of artistry that adds a personal touch to any wall.",
+    price: 1000,
+    countInStock: 12,
+    category: "Home Decor",
+  },
+  {
+    name: "Antique Brass Pocket Watch",
+    imageUrl:
+      "https://images.pexels.com/photos/325845/pexels-photo-325845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description:
+      "This vintage-inspired brass pocket watch features intricate detailing, with an old-world charm that harkens back to classic craftsmanship. Each piece is carefully restored and comes with a unique patina, making it a perfect addition for collectors or as a sophisticated heirloom.",
+    price: 1500,
+    countInStock: 10,
+    category: "Antiques",
+  },
 ];
 
 module.exports = products;

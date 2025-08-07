@@ -41,11 +41,11 @@ function Banner() {
 
   return (
     <>
-      <div className="sales-timer">
+      {/* <div className="sales-timer">
         <span>
           Sale ends in: {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
         </span>
-      </div>
+      </div> */}
       <section className="banner">
         <img src={BannerImg} alt="Banner" className="banner-image" />
         <div className="banner-content">

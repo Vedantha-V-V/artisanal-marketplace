@@ -65,6 +65,7 @@
 }
 
 .navbar__token {
+  text-decoration:none;
   transition: all 0.5 ease;
 }
 
