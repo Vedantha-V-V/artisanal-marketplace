@@ -3,6 +3,6 @@
 
 Local artisanal marketplace.
 
-Frontend: Reactjs
-Backend: Nodejs, Expressjs
-Database: MongoDB
+Frontend: Reactjs <br>
+Backend: Nodejs, Expressjs <br>
+Database: MongoDB <br>
