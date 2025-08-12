@@ -13,7 +13,7 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
 
         <p className="info__price">₹{price}</p>
 
-        <Link to={`/product/${productId}`} className="info__button">
+        <Link to={`/product/${productId}`} className="info_button">
           View
         </Link>
       </div>

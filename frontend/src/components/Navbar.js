@@ -39,53 +39,52 @@ const Navbar = ({ click }) => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
-        <img src="Art To Cart.png" alt="Website Logo" className="logo" />
-        <Link to="/" className="navbar__token"><h2>Art To Cart</h2></Link>
+      <div className="navbar_logo">
+        {/* <img src="Art To Cart.png" alt="Website Logo" className="logo" /> */}
+        <Link to="/" className="navbar_token"><h2>Art To Cart</h2></Link>
       </div>
       <div>
-        <ul className="navbar__links">
+        <ul className="navbar_links">
           <li>
-            <Link to="/" className="navbar__token">Home</Link>
+            <Link to="/" className="navbar_token">Home</Link>
           </li>
           <li>
-            <Link to="/about" className="navbar__token">About</Link>
+            <Link to="/about" className="navbar_token">About</Link>
           </li>
           <li>
-            <Link to="/categories" className="navbar__token">Categories</Link> {/* Add this line */}
+            <Link to="/categories" className="navbar_token">Categories</Link>
           </li>
           <li>
-            <Link to="/contact" className="navbar__token">Contact</Link>
+            <Link to="/contact" className="navbar_token">Contact</Link>
           </li>
         </ul>
       </div>
-      <ul className="navbar__links">
+      <ul className="navbar_links">
         <li>
-          <div className="profile__icon" onClick={toggleProfile}>
-            <i className="fas fa-user-circle"></i>
+          <div className="profile_icon" onClick={toggleProfile}>
+            <img src="./profile.png" alt="profile" height="30px" width="30px"/>
           </div>
           {showProfile && (
-            <div className="profile__dropdown">
+            <div className="profile_dropdown">
               {user.userInfo.isLogin ? (
                 <>
                   <p>{user.userInfo.details.fullName}</p>
                   <p>{user.userInfo.details.email}</p>
-                  <p onClick={_handleLogout} className="logout__link">Logout</p>
+                  <p onClick={_handleLogout} className="logout_link">Logout</p>
                 </>
               ) : (
-                <>
-                  <p>Guest</p>
+                <button className="login_btn">
                   <p></p>
-                  <Link to="/signin" className="login__link">Login</Link>
-                </>
+                  <Link to="/signin" className="login_link">Login</Link>
+                </button>
               )}
             </div>
           )}
         </li>
         <li>
-          <div className="cart__link" onClick={handleCartClick}>
+          <div className="cart_link" onClick={handleCartClick}>
             <i className="fas fa-shopping-cart"></i>
-            <span>Cart</span>
+            {/* <span>Cart</span> */}
             <span className="cartlogo__badge">{getCartCount()}</span>
           </div>
         </li>

@@ -1,25 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=M+PLUS+Rounded+1c&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .footer {
-        position: fixed; /* Fixed position */
-        bottom: 0; /* Aligns to the bottom of the viewport */
-        left: 0; /* Aligns to the left edge */
-        right: 0; /* Aligns to the right edge */
-        background-color: #2d3748; /* Tailwind's bg-gray-800 */
-        color: #ffffff; /* Tailwind's text-white */
-        padding-top: 1rem; /* Tailwind's py-4 (1rem = 16px top padding) */
-        padding-bottom: 1rem; /* Bottom padding */
-        text-align: center; /* Center-aligned text */
-      
+    font-family:"MuseoModerno";
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color: grey;
+    color: #ffffff; 
+    padding: 1rem;
+    align-items:center;
 }
 
-.footer-links {
+.footer_links {
     list-style: none;
     display: flex;
     justify-content: center;
+    color:white;
     gap: 1rem;
 }
 
-.footer-links a {
+.footer_links li{
     font-family:Segoe UI;
+    text-decoration:none;
     text-decoration: none;
     color: #333;
+    width:50px;
+    height:50px;
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  text-decoration:none;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
+

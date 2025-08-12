@@ -9,6 +9,7 @@ import Banner from '../components/Banner'
 //Actions
 import {getProducts as listProducts} from '../redux/actions/productActions'
 import {setUserDeatils} from '../redux/actions/userAction'
+import Footer from '../components/Footer'
 
 const HomeScreen = () => {
   const dispatch = useDispatch()
@@ -47,7 +48,9 @@ const HomeScreen = () => {
           ))
         )}
       </div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   )
 }
 
